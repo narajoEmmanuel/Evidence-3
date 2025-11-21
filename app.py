@@ -548,7 +548,7 @@ def partner_page(df):
     # -------------------------------------------------------------
     # TOP 5 SKUs BY VOLUME
     # -------------------------------------------------------------
-    st.markdown("### **Top 5 SKUs by Sales Volume**")
+    st.markdown("### **Top SKUs by Sales Volume**")
     st.markdown(
         """
         <div style='font-size:0.95rem; color:#555; line-height:1.45; margin-bottom:1rem;'>
@@ -592,7 +592,7 @@ def partner_page(df):
         y="Total_QTY",
         color="category",
         color_discrete_sequence=["#c69214", "#e0b65a", "#8a6d2f"],
-        title=f"Top 5 SKUs by Quantity Sold – {partner}",
+        title=f"Top SKUs by Quantity Sold – {partner}",
         labels={"Total_QTY": "Units Sold", "sku": "SKU"},
     )
 
@@ -758,7 +758,7 @@ def ml_engine_page(df):
     with c2:
         st.markdown("**MAPE percent**")
         st.markdown(
-            f"<div class='big-kpi'>{model_mape} percent</div>", unsafe_allow_html=True)
+            f"<div class='big-kpi'>{model_mape}%</div>", unsafe_allow_html=True)
 
     with c3:
         st.markdown("**R2 Score**")
